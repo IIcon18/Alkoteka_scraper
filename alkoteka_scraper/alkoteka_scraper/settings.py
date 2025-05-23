@@ -25,9 +25,15 @@ USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTM
 
 REGION_NAME = 'Краснодар'
 
-PROXY = ''
+PROXY_LIST = [
+    'http://223.204.48.85:8081',
+]
 
 LOG_LEVEL = 'INFO'
+
+DOWNLOADER_MIDDLEWARES = {
+    'alkoteka_scraper.middlewares.AlkotekaScraperDownloaderMiddleware': 543,
+}
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32

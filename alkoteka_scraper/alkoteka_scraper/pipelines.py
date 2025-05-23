@@ -5,9 +5,16 @@
 
 
 # useful for handling different item types with a single interface
-from itemadapter import ItemAdapter
+import json
+from datetime import datetime
 
 
-class AlkotekaScraperPipeline:
+class SaveToFilePipeline:
+    """
+    Pipeline for saving items to a JSON file.
+    """
+
     def process_item(self, item, spider):
+        # Добавляем timestamp
+        item['timestamp'] = int(datetime.now().timestamp())
         return item

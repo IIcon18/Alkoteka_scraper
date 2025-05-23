@@ -6,7 +6,7 @@
 import scrapy
 
 
-class AlkotekaScraperItem(scrapy.Item):
+class AlkotekaItem(scrapy.Item):
     timestamp = scrapy.Field()
     RPC = scrapy.Field()
     url = scrapy.Field()
@@ -18,5 +18,5 @@ class AlkotekaScraperItem(scrapy.Item):
     stock = scrapy.Field()
     assets = scrapy.Field()
     metadata = scrapy.Field()
-    variation = scrapy.Field()
+    variants = scrapy.Field()
     pass
