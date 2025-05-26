@@ -172,3 +172,15 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# IntelliJ IDEA/JetBrains IDEs
+*.iml
+.idea/
+*.xml
+
+# Scrapy temporary results
+*.json
+
+# System files
+.DS_Store
+Thumbs.db
